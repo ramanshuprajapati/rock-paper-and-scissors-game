@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>`
+  </head>
+  <body class="bg-blue-950 flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white shadow-xl rounded-2xl p-8 max-w-md w-full text-center">
+      <h1 class="text-3xl font-bold mb-6 text-gray-800">Rock Paper Scissors</h1>
+
+      <!-- Choices -->
+      <div id="choices" class="flex justify-center gap-4 mb-6">
+        <button id="rock" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg text-lg font-semibold">
+          ✊ Rock
+        </button>
+        <button id="paper" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg text-lg font-semibold">
+          ✋ Paper
+        </button>
+        <button id="scissors" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-lg text-lg font-semibold">
+          ✌️ Scissors
+        </button>
+      </div>
+
+      <!-- Result Section -->
+      <div class="text-gray-700 space-y-2">
+        <p><strong>Your Choice:</strong> <span id="user-choice">-</span></p>
+        <p><strong>Computer's Choice:</strong> <span id="computer-choice">-</span></p>
+        <p><strong>Result:</strong> <span id="result" class="font-bold">-</span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
